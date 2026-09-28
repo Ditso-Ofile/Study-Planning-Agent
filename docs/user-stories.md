@@ -97,3 +97,21 @@ Then the system shall not perform the calendar write operation.
 Given the external calendar service rejects a request or is unavailable,  
 When the integration fails,  
 Then the system shall report the failure without silently deleting assignment data.
+
+---
+
+## US-05 Show tasks as completed
+
+As a student, I want to know which tasks i have completed, so that i dont fall behind on certain task
+
+### Acceptance criteria
+
+**AC-01** 
+Given the student has a pending assignment in their schedule
+When the student marks the task as completed
+Then the system removes it from the active study plan and displays it in the completed list.
+
+**AC-02**  
+Given the student wants to review their progress
+When the student asks the agent which tasks are finished
+Then the agent outputs a list of all completed assignments without inventing any missing data.
