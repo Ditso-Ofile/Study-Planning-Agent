@@ -13,19 +13,27 @@ The project is developed incrementally. Each laboratory adds software engineerin
 ## Current Repository Structure 
  
 ```text 
-study-planning-agent/ 
-|-- README.md 
-|-- lab_agent.py 
-|-- agent_memory.json 
-|-- agent_output.txt 
-`-- notes/ 
-    `-- week1.md 
+study-planning-agent/
+|-- README.md
+|-- lab_agent.py
+|-- app.py
+|-- agent_memory.json
+|-- agent_output.txt
+|-- notes/
+|   `-- week1.md
 `-- docs/
     |-- stakeholders.md
     |-- requirements.md
     |-- user-stories.md
-    `-- use-cases.md
-```
+    |-- use-cases.md
+    `-- models/
+        |-- README.md
+        |-- use-case-diagram.md
+        |-- class-diagram.md
+        |-- object-diagram.md
+        |-- database-diagram.md
+        `-- package-diagram.md
+
 
  
 ## Week 1 - Git Collaboration and AI Agent Fundamentals 
@@ -69,6 +77,11 @@ Week 2 adds stakeholder analysis, functional and non-functional requirements, AI
 
 The executable `lab_agent.py` application is unchanged from Week 1. Week 2 changes the specification and project documentation, not the implementation.
 
+ ## Week 3 – UML Structural Modeling
+
+Week 3 adds structural models and a small Python domain-model application. Mermaid sources are stored in `docs/models/`, and `app.py` implements the same Student, Assignment, StudyPlan, and PlanItem concepts shown in the diagrams.
+
+
  
 ## Development Workflow 
  
@@ -90,11 +103,12 @@ main
  
 Do not begin a new laboratory from an old task branch. 
  
-## Current Project Status 
- 
-- Week 1: completed - Git workflow and introductory agent simulator
-- Week 2: completed - requirements engineering and use-case modeling
-- Week 3: next - UML structural modeling
+## Current Project Status
+
+- Week 1: completed – Git workflow and introductory agent simulator
+- Week 2: completed – requirements engineering and use-case modeling
+- Week 3: completed – structural modeling and Python domain model
+- Week 4: next – activity, state machine, sequence diagrams, and executable behavior
 
  
 ## Course 
