@@ -10,22 +10,49 @@ This repository contains the semester project and laboratory artefacts for the S
  
 The project is developed incrementally. Each laboratory adds software engineering documentation, models, source code, tests, or AI-agent-related components. 
  
-## Current Repository Structure 
- 
-```text 
+
+## Current Repository Structure
+
+```text
 study-planning-agent/
 |-- README.md
+|-- .gitignore
+|-- __init__.py
 |-- app.py
 |-- lab_agent.py
+|-- run.py
 |-- agent_memory.json
 |-- agent_output.txt
+|
+|-- domain/
+|   |-- __init__.py
+|   `-- models.py
+|
+|-- ports/
+|   |-- __init__.py
+|   |-- calendar_port.py
+|   `-- memory_store.py
+|
+|-- adapters/
+|   |-- __init__.py
+|   |-- fake_calendar.py
+|   `-- json_memory.py
+|
+|-- agent/
+|   |-- __init__.py
+|   |-- states.py
+|   |-- planner.py
+|   `-- orchestrator.py
+|
 |-- notes/
 |   `-- week1.md
+|
 `-- docs/
     |-- stakeholders.md
     |-- requirements.md
     |-- user-stories.md
     |-- use-cases.md
+    |
     |-- models/
     |   |-- README.md
     |   |-- use-case-diagram.md
@@ -33,12 +60,13 @@ study-planning-agent/
     |   |-- object-diagram.md
     |   |-- database-diagram.md
     |   `-- package-diagram.md
+    |
     `-- behavior/
         |-- README.md
         |-- activity-diagram.md
         |-- state-machine-diagram.md
         `-- sequence-diagram.md
-
+```
 
 
  
@@ -126,7 +154,7 @@ Do not begin a new laboratory from an old task branch.
 - Week 5: next - architecture, interfaces, coupling/cohesion, and agent architecture
 
  
-## Course 
+## Course
  
 Software Engineering and AI Agent Fundamentals   
 GAINBAN-SZOFMEIN-1 
